@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IF=Edge">
+            <meta name="viewport" content="width=device-width, initial-1">
+            <title>Validación de Campos de Formulario</title>
+            <link rel="stylesheet" href="./css/fonts.css">
+            <link rel="stylesheet" href="./css/app.css"> 
+            <script src="./js/app.js"></script>       
+        </head>
+        <body>
+            <main>
+                <section>
+                    <form action="">
+                        <div>
+                            <label for="nameUser">Nombre (s)</label>
+                            <input type="text" name="nameUser" id="nameUser" placeholder="Nombre (s)" class="name">
+                            <span id="errorNameUser" style="color: red;"></span>
+                        </div>
+                        <div>
+                            <label for="lastName">Apellido (s)</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Apellido (s)" class="name">
+                        </div>
+                        <div>
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="@" class="email">
+                        </div>
+                        <div>
+                            <label for="phone">Telefono</label>
+                            <input type="tel" name="phone" id="phone" placeholder="###" class="phone">
+                        </div>
+                        <div>
+                            <button type="button" onclick="validate()">
+                                <img src="./icons/diskette.png" alt="">
+                                Guardar
+                            </button>
+                        </div>
+                    </form> 
+                </section>    
+            </main>
+        </body>
+    </html>
